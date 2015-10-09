@@ -13,11 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp \
     protractor.cpp
 
-HEADERS  += widget.h \
-    protractor.h \
+HEADERS  += protractor.h \
     ui_about.h
 
 FORMS += \
