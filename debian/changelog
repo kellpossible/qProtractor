@@ -1,8 +1,8 @@
-qprotractor (0.0.1-5~oneiric) oneiric; urgency=low
+qprotractor (0.0.1-5~maverick) maverick; urgency=low
 
   * Do not display window frame under unity
 
- -- Alexey Guseynov <kibergus@kibergus>  Tue, 01 Nov 2011 20:50:45 +0400
+ -- Alexey Guseynov <kibergus@gmail.com>  Tue, 01 Nov 2011 20:50:45 +0400
 
 qprotractor (0.0.0-5~oneiric) oneiric; urgency=low
 

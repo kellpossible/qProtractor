@@ -1,7 +1,7 @@
 #ifndef PROTRACTOR_H
 #define PROTRACTOR_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
 #include <boost/optional.hpp>
 
 class Protractor : public QWidget

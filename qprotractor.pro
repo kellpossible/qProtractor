@@ -1,29 +1,28 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2011-10-18T23:40:00
+# Project created by QtCreator 2015-10-09T23:29:58
 #
 #-------------------------------------------------
+
+QT       += core gui widgets
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = qprotractor
 TEMPLATE = app
 
-SOURCES += main.cpp\
-        protractor.cpp
 
-HEADERS  += protractor.h
+SOURCES += main.cpp\
+        widget.cpp \
+    protractor.cpp
+
+HEADERS  += widget.h \
+    protractor.h \
+    ui_about.h
 
 FORMS += \
     about.ui
 
-RESOURCES += \
-    protractor.qrc
-
-TRANSLATIONS = qprotractor_ru.ts
-
-binaries.path = /usr/bin/
-binaries.files = qprotractor
-
-translations.path = /usr/share/qprotractor/translations
-translations.files = qprotractor_ru.qm
-
-INSTALLS += binaries translations
+DISTFILES += \
+    logo_icon.png \
+    logo_small.png
