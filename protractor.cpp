@@ -1,6 +1,8 @@
 #include "protractor.h"
 
 #include <QtGui>
+#include <QMenu>
+#include <QMessageBox>
 #include <boost/assign/std/vector.hpp>
 
 #include <cmath>
@@ -327,7 +329,7 @@ void Protractor::loadState() {
 
 QString Protractor::configPath() {
     QString folderName =
-        QDesktopServices::storageLocation(QDesktopServices::DataLocation);
+        QStandardPaths::writableLocation(QStandardPaths::DataLocation);
     if (!QDir(folderName).exists()) {
         QDir().mkpath(folderName);
     }
